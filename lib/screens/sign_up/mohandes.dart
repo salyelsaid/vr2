@@ -3,6 +3,8 @@ import 'package:vr/screens/sign_in/view.dart';
 import 'package:vr/widgets/button.dart';
 import 'package:vr/widgets/text_filed.dart';
 
+import '../../home_page/home.dart';
+
 class SignUpScreen2 extends StatelessWidget {
   const SignUpScreen2({Key key}) : super(key: key);
 
@@ -88,7 +90,12 @@ class SignUpScreen2 extends StatelessWidget {
               CustomButton(
                 text: "انشاء حساب",
                 color: Colors.amber,
-                page: () {},
+                page: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Test()));
+                },
               ),
               TextButton(
                   onPressed: () {                     Navigator.of(context)

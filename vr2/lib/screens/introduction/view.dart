@@ -5,7 +5,7 @@ import 'package:vr/screens/custmer_or_eng/view.dart';
 import 'package:vr/screens/introduction/controller.dart';
 import 'package:vr/screens/introduction/model.dart';
 import 'package:vr/screens/sign_in/view.dart';
-//import 'package:vr/screens/sign_up/3amel.dart';
+import 'package:vr/screens/sign_up/3amel.dart';
 
 class AppIntro extends StatefulWidget {
   const AppIntro({Key key}) : super(key: key);
@@ -36,6 +36,19 @@ class _AppIntroState extends State<AppIntro> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // floatingActionButton: FloatingActionButton(
+      //   backgroundColor: Colors.transparent,
+      //   elevation: 0,
+      //   onPressed: () {
+      //     translator.setNewLanguage(
+      //       context,
+      //       newLanguage: translator.activeLanguageCode == 'ar' ? 'en' : 'ar',
+      //       remember: true,
+      //       restart: true,
+      //     );
+      //   },
+      //   child: const Icon(Icons.language),
+      // ),
       body: SizedBox(
         height: MediaQuery.of(context).size.height,
         child: PageIndicatorContainer(
@@ -86,7 +99,7 @@ class _AppIntroState extends State<AppIntro> {
                                           const CustmerOrEng()));
                             },
                             child: Text(
-                              "انشاء حساب".tr(),
+                              "get_start".tr(),
                               style: const TextStyle(color: Colors.blueGrey),
                             )),
                       ),
@@ -96,7 +109,7 @@ class _AppIntroState extends State<AppIntro> {
                               builder: (context) => const LoginScreen()));
                         },
                         child: Text(
-                          "لدي حساب بالفعل".tr(),
+                          "haveaccount".tr(),
                           style: const TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.normal),
@@ -117,6 +130,13 @@ class _AppIntroState extends State<AppIntro> {
           
         ),
       ),
+      // floatingActionButton: FloatingActionButton(
+      //   child: Icon(Icons.refresh),
+      //   tooltip: "force refresh indicator",
+      //   onPressed: () {
+      //     key.currentState?.forceRefreshState();
+      //   },
+      // ),
     );
   }
 }

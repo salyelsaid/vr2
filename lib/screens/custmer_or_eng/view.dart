@@ -50,12 +50,11 @@ class CustmerOrEng extends StatelessWidget {
                 ],
               ),
               TextButton(
-                  onPressed: () 
-                  {
-                      Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const LoginScreen()));
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const LoginScreen()));
                   },
                   child: const Text(
                     "لديك حساب",

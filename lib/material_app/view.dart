@@ -14,7 +14,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       builder: ((context, child) =>
           Directionality(textDirection: TextDirection.rtl, child: child)),
-      title: "vr project",
+      title: "vr2 project",
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.blueGrey,
       ),

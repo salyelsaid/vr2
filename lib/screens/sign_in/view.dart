@@ -3,6 +3,8 @@ import 'package:vr/screens/custmer_or_eng/view.dart';
 import 'package:vr/widgets/button.dart';
 import 'package:vr/widgets/text_filed.dart';
 
+import '../../home_page/home.dart';
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key key}) : super(key: key);
 
@@ -65,7 +67,12 @@ class LoginScreen extends StatelessWidget {
               CustomButton(
                 text: "تسجيل الدخول",
                 color: Colors.amber,
-                page: () {},
+                page: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>  const Test()));
+                },
               ),
              
             ],
